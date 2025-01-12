@@ -1,0 +1,160 @@
+/*General Reset*/
+body, h1, ul, p, li, a {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,  sans-serif;
+    line-height: 1.6;
+}
+
+/*Header*/
+header{
+    background-color: #333;
+    color: #fff;
+   
+    padding: 1rem 0;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header .logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header .nav-list{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.header .nav-list a{
+    color:#fff;
+    text-decoration: none;
+}
+.header .nav-list a:hover {
+    color: #f90; 
+  }
+
+  /*Hero Section*/
+.hero {
+  background: url('../assets/images/icons/heroimg1.jpg') no-repeat center center/cover;
+  color: #fff; /* White text */
+  text-align: center; /* Center-align text */
+  padding: 5rem 1rem; /* Add vertical space */
+    }
+
+.hero-content{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+.hero h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+.hero p{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+.hero .btn{
+        display: inline-block;
+        background-color: #f90;
+        color: #fff;
+        padding: 0.5rem 2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+    }
+
+.hero .btn:hover {
+        background: #ffb84d; 
+      }
+
+
+      /* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem; /* Smaller headline on mobile */
+    }
+    .hero p {
+      font-size: 1rem; /* Smaller subheading */
+    }
+    .hero .btn {
+      padding: 0.6rem 1.5rem; /* Smaller button padding */
+    }
+    .header .container {
+      flex-direction: column; /* Stack items vertically */
+    }
+    .header .nav-list {
+      flex-direction: column; /* Stack navigation links */
+      gap: 0.5rem; /* Smaller gaps */
+    }
+  }
+
+  /* Footer Styles */
+.footer {
+    background-color: #222; /* Dark background */
+    color: #fff; /* White text for contrast */
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Social Media Icons */
+.footer .social-media {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer .social-icon img {
+    width: 32px; /* Adjust size of icons */
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.footer .social-icon:hover img {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+/* Footer Links */
+.footer .footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .footer-links a:hover {
+    color: #f90; /* Highlight color on hover */
+}
+
+/* Copyright Text */
+.footer .copyright {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #bbb; /* Softer text color */
+}
